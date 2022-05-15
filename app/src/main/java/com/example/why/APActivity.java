@@ -41,6 +41,7 @@ public class APActivity extends AppCompatActivity {
             }
         });
 
+        //Todo: 기존에 저장된 data를 수정하길 원하는 경우, ADDOREditAPActivity에 SSID와 MAC 전달
 
     }
 

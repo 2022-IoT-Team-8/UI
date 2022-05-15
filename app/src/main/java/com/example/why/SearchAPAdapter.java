@@ -9,12 +9,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class APAdapter extends BaseAdapter {
+public class SearchAPAdapter extends BaseAdapter {
     Context mContext = null;
     LayoutInflater mLayoutInflater = null;
     ArrayList<APData> item;
 
-    public APAdapter(Context mContext, ArrayList<APData> item) {
+    public SearchAPAdapter(Context mContext, ArrayList<APData> item) {
         this.mContext = mContext;
         this.item = item;
         mLayoutInflater = LayoutInflater.from(mContext);
@@ -39,12 +39,11 @@ public class APAdapter extends BaseAdapter {
         View view = mLayoutInflater.inflate(R.layout.ap_layout, null);
 
         TextView SSID = view.findViewById(R.id.SSID);
-        TextView MACnumber = view.findViewById(R.id.MAC);
+        TextView MAC = view.findViewById(R.id.MAC);
 
         SSID.setText(item.get(position).getSsid());
-        MACnumber.setText(item.get(position).getMac_address());
+        MAC.setText(item.get(position).getMac_address());
 
         return view;
     }
-
 }
