@@ -13,6 +13,7 @@
 
         </activity>
         <activity android:name=".AdminActivity" android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".FloorActivity"/>
-        <activity android:name=".APActivity"/>
+        <activity android:name=".APActivity" />
+        <activity android:name=".AddOrEditAPActivity"/>
+        <activity android:name=".SearchAPActivity"/>
 
     </application>
 

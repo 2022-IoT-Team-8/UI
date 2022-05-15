@@ -35,7 +35,7 @@ public class FloorActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 int roomnumber = floor * 100 + position + 1;
                 Intent intent = new Intent(FloorActivity.this, APActivity.class);
-                intent.putExtra("room", roomnumber);
+                intent.putExtra("roomnumber", roomnumber);
                 startActivity(intent);
             }
         });
